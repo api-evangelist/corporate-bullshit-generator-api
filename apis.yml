@@ -1,13 +1,18 @@
+aid: corporate-bullshit-generator-api
 url: https://example.com/apis/apis.yml
 apis: []
 name: Corporate Bullshit Generator
 tags:
   - Fake Data
+  - Corporate Jargon
+  - Phrases
 type: Contract
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json-icons/apis-json.png
+access: 3rd-Party
 common: []
 created: '2024-12-25'
 modified: '2025-03-01'
+position: Consuming
 description: >-
   The Corporate Bullshit Generator is a tool designed to generate random
   nonsensical corporate jargon and buzzwords. It takes mundane phrases and spins
@@ -21,6 +26,3 @@ maintainers:
   - FN: API Evangelist
     email: info@apievangelist.com
 specificationVersion: '0.18'
-aid: corporate-bullshit-generator-api
-position: Consuming
-access: 3rd-Party
