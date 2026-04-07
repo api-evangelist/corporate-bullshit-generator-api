@@ -1,15 +1,13 @@
 aid: corporate-bullshit-generator-api
-url: 
-  https://raw.githubusercontent.com/api-evangelist/corporate-bullshit-generator-api/refs/heads/main/apis.yml
+url: https://raw.githubusercontent.com/api-evangelist/corporate-bullshit-generator-api/refs/heads/main/apis.yml
 apis: []
 name: Corporate Bullshit Generator
 tags:
-  - Fake Data
   - Corporate Jargon
+  - Fake Data
   - Phrases
 type: Contract
-image: 
-  https://kinlane-productions2.s3.amazonaws.com/apis-json-icons/apis-json.png
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json-icons/apis-json.png
 access: 3rd-Party
 common: []
 created: '2024-12-25'
