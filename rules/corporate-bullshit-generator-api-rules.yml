@@ -1,0 +1,81 @@
+extends: ["spectral:oas"]
+documentationUrl: https://corporatebs-generator.sameerkumar.website/
+rules:
+  cbsg-info-contact:
+    description: API info object should include contact information.
+    given: "$.info"
+    severity: warn
+    then:
+      field: contact
+      function: truthy
+  cbsg-info-license:
+    description: API should declare a license.
+    given: "$.info"
+    severity: warn
+    then:
+      field: license
+      function: truthy
+  cbsg-server-https:
+    description: Servers must use HTTPS.
+    given: "$.servers[*].url"
+    severity: error
+    then:
+      function: pattern
+      functionOptions:
+        match: "^https://"
+  cbsg-server-host:
+    description: Server URL must reference the public CBSG host.
+    given: "$.servers[*].url"
+    severity: error
+    then:
+      function: pattern
+      functionOptions:
+        match: "corporatebs-generator.sameerkumar.website"
+  cbsg-root-path:
+    description: API must define the root path.
+    given: "$.paths"
+    severity: error
+    then:
+      field: /
+      function: truthy
+  cbsg-get-only:
+    description: The root path must only support GET.
+    given: "$.paths['/']"
+    severity: error
+    then:
+      function: schema
+      functionOptions:
+        schema:
+          type: object
+          properties:
+            get:
+              type: object
+          additionalProperties: false
+  cbsg-no-auth:
+    description: The API is unauthenticated; security must be empty or absent.
+    given: "$.paths['/'].get"
+    severity: warn
+    then:
+      field: security
+      function: falsy
+  cbsg-json-response:
+    description: 200 response must return application/json.
+    given: "$.paths['/'].get.responses.200.content"
+    severity: error
+    then:
+      field: application/json
+      function: truthy
+  cbsg-phrase-property:
+    description: Response schema must include a phrase property.
+    given: "$.components.schemas.Phrase.properties"
+    severity: error
+    then:
+      field: phrase
+      function: truthy
+  cbsg-operation-id:
+    description: Operation must define an operationId.
+    given: "$.paths.*.get"
+    severity: error
+    then:
+      field: operationId
+      function: truthy

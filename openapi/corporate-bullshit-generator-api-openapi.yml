@@ -1,0 +1,53 @@
+openapi: 3.0.3
+info:
+  title: Corporate Bullshit Generator API
+  version: '1.0'
+  description: >-
+    A single-endpoint public REST API that returns a randomly-generated
+    corporate jargon phrase as JSON. Each call to the root path returns a
+    new phrase in the form {"phrase": "..."}. No authentication is required.
+  contact:
+    name: Sameer Kumar
+    url: https://sameerkumar.website/
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+servers:
+  - url: https://corporatebs-generator.sameerkumar.website
+    description: Public production server
+tags:
+  - name: Phrases
+    description: Random corporate jargon phrase generation.
+paths:
+  /:
+    get:
+      operationId: getCorporatePhrase
+      summary: Generate a corporate jargon phrase
+      description: >-
+        Returns a single randomly-generated corporate jargon phrase as a JSON
+        object. No parameters or authentication are required. Each call
+        returns a different phrase.
+      tags:
+        - Phrases
+      responses:
+        '200':
+          description: A randomly-generated corporate jargon phrase.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Phrase'
+              examples:
+                example:
+                  value:
+                    phrase: Energistically Conceptualize Client-centric Systems
+components:
+  schemas:
+    Phrase:
+      type: object
+      required:
+        - phrase
+      properties:
+        phrase:
+          type: string
+          description: The randomly-generated corporate jargon phrase.
+          example: Phosfluorescently Formulate 24/365 Niches

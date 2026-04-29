@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "@vocab": "https://corporatebs-generator.sameerkumar.website/vocab#",
+    "schema": "https://schema.org/",
+    "cbsg": "https://corporatebs-generator.sameerkumar.website/vocab#",
+    "Phrase": "cbsg:Phrase",
+    "phrase": "schema:text"
+  }
+}

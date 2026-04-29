@@ -1,0 +1,19 @@
+name: Corporate Bullshit Generator API Vocabulary
+description: >-
+  Controlled vocabulary describing the single resource exposed by the
+  Corporate Bullshit Generator API.
+url: https://corporatebs-generator.sameerkumar.website/
+version: '1.0'
+modified: '2026-04-28'
+resources:
+  - name: Phrase
+    description: A single randomly-generated corporate jargon phrase.
+    fields:
+      - name: phrase
+        type: string
+        description: The corporate jargon string returned in the JSON body.
+concepts:
+  - name: Corporate Jargon
+    description: Buzzword-laden language commonly found in corporate communications.
+  - name: Random Phrase Generation
+    description: Server-side selection of words from word lists to compose a phrase.
