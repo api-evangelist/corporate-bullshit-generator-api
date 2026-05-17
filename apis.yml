@@ -1,6 +1,6 @@
 aid: corporate-bullshit-generator-api
 name: Corporate Bullshit Generator API
-x-type: company
+kind: company
 description: >-
   The Corporate Bullshit Generator API is a free public REST API that returns
   randomly-generated corporate jargon phrases as JSON. Each request returns a
