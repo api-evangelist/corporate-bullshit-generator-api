@@ -1,0 +1,102 @@
+{
+  "item": [
+    {
+      "id": "f12f0a6f-7a79-47fb-8e15-621cc6f4e826",
+      "name": "Phrases",
+      "description": {
+        "content": "Random corporate jargon phrase generation.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "03deba61-cf8c-4389-b60f-7ccc92c9a261",
+          "name": "Generate a corporate jargon phrase",
+          "request": {
+            "name": "Generate a corporate jargon phrase",
+            "description": {
+              "content": "Returns a single randomly-generated corporate jargon phrase as a JSON object. No parameters or authentication are required. Each call returns a different phrase.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5cce513d-b11f-4c3b-806b-011adbc2b3b8",
+              "name": "A randomly-generated corporate jargon phrase.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"phrase\": \"Energistically Conceptualize Client-centric Systems\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://corporatebs-generator.sameerkumar.website",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "90e95e9e-c396-43c9-8658-47251e6c2c55",
+    "name": "Corporate Bullshit Generator API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "A single-endpoint public REST API that returns a randomly-generated corporate jargon phrase as JSON. Each call to the root path returns a new phrase in the form {\"phrase\": \"...\"}. No authentication is required.\n\nContact Support:\n Name: Sameer Kumar",
+      "type": "text/plain"
+    }
+  }
+}
