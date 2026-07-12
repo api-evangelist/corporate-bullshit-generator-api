@@ -60,6 +60,8 @@ apis:
       - type: Vocabulary
         url: vocabulary/corporate-bullshit-generator-vocabulary.yml
 common:
+  - type: DomainSecurity
+    url: security/corporate-bullshit-generator-api-domain-security.yml
   - type: Website
     url: https://corporatebs-generator.sameerkumar.website/
   - type: GitHub
