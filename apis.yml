@@ -7,6 +7,18 @@ description: >-
   test fixtures, or comic relief in mock dashboards. The API is unauthenticated and returns a single phrase property in
   the JSON response body.
 url: https://raw.githubusercontent.com/api-evangelist/corporate-bullshit-generator-api/refs/heads/main/apis.yml
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json-icons/apis-json.png
 type: Index
 access: 3rd-Party
@@ -29,36 +41,28 @@ created: '2024-12-25'
 modified: '2026-05-19'
 specificationVersion: '0.20'
 apis:
-  - aid: corporate-bullshit-generator-api:cbsg-api
-    name: Corporate Bullshit Generator API
-    description: >-
-      A single-endpoint public REST API that returns a randomly-generated corporate jargon phrase as JSON. Each call to
-      the root path returns a new phrase in the form {"phrase": "..."}. No authentication, no rate limit headers, and no
-      parameters are required.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json-icons/apis-json.png
-    humanURL: https://corporatebs-generator.sameerkumar.website/
-    baseURL: https://corporatebs-generator.sameerkumar.website
-    tags:
-      - Free
-      - JSON
-      - Public API
-      - REST
-      - Unauthenticated
-    properties:
-      - type: HumanURL
-        url: https://corporatebs-generator.sameerkumar.website/
-      - type: GitHub
-        url: https://github.com/sameerkumar18/corporate-bs-generator
-      - type: OpenAPI
-        url: openapi/corporate-bullshit-generator-api-openapi.yml
-      - type: Rules
-        url: rules/corporate-bullshit-generator-api-rules.yml
-      - type: Capabilities
-        url: capabilities/corporate-bullshit-generator-api-capabilities.yml
-      - type: JSONLD
-        url: json-ld/corporate-bullshit-generator-context.jsonld
-      - type: Vocabulary
-        url: vocabulary/corporate-bullshit-generator-vocabulary.yml
+- aid: corporate-bullshit-generator-api:corporate-bullshit-generator-api-phrases-api
+  name: Corporate Bullshit Generator API Phrases API
+  description: Random corporate jargon phrase generation.
+  humanURL: https://corporatebs-generator.sameerkumar.website/
+  baseURL: https://corporatebs-generator.sameerkumar.website
+  tags:
+  - Phrases
+  properties:
+  - type: OpenAPI
+    url: openapi/corporate-bullshit-generator-api-phrases-api-openapi.yml
+  - type: HumanURL
+    url: https://corporatebs-generator.sameerkumar.website/
+  - type: GitHub
+    url: https://github.com/sameerkumar18/corporate-bs-generator
+  - type: Rules
+    url: rules/corporate-bullshit-generator-api-rules.yml
+  - type: Capabilities
+    url: capabilities/corporate-bullshit-generator-api-capabilities.yml
+  - type: JSONLD
+    url: json-ld/corporate-bullshit-generator-context.jsonld
+  - type: Vocabulary
+    url: vocabulary/corporate-bullshit-generator-vocabulary.yml
 common:
   - type: AgenticAccess
     url: agentic-access/corporate-bullshit-generator-api-agentic-access.yml
