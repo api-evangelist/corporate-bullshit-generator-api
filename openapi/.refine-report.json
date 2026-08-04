@@ -1,0 +1,14 @@
+{
+  "provider": "corporate-bullshit-generator-api",
+  "sources": [
+    "corporate-bullshit-generator-api-phrases-api-openapi.yml"
+  ],
+  "outputs": [
+    "corporate-bullshit-generator-api-phrases-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
