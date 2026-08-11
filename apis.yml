@@ -57,8 +57,6 @@ apis:
     url: https://github.com/sameerkumar18/corporate-bs-generator
   - type: Rules
     url: rules/corporate-bullshit-generator-api-rules.yml
-  - type: Capabilities
-    url: capabilities/corporate-bullshit-generator-api-capabilities.yml
   - type: JSONLD
     url: json-ld/corporate-bullshit-generator-context.jsonld
   - type: Vocabulary
