@@ -30,7 +30,7 @@ accessModel:
   - plans
   generated: '2026-07-22'
   method: derived
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json-icons/apis-json.png
+image: ''
 type: Index
 access: 3rd-Party
 position: Consuming
