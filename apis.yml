@@ -9,14 +9,18 @@ description: >-
 url: https://raw.githubusercontent.com/api-evangelist/corporate-bullshit-generator-api/refs/heads/main/apis.yml
 deliveryModel:
   model: unknown
-  open_source: false
+  license_evidence:
+    not_product:
+    - sameerkumar18/corporate-bs-generator
+  open_source: unknown
   commercial: false
   callable_host: true
   label: Delivery model not determined — needs a product licence on record
   confidence: low
   source:
   - openapi
-  generated: '2026-08-28'
+  - repository-not-product
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: freemium
@@ -70,7 +74,6 @@ apis:
   name: Corporate Bullshit Generator API Phrases API
   description: Random corporate jargon phrase generation.
   humanURL: https://corporatebs-generator.sameerkumar.website/
-  baseURL: https://corporatebs-generator.sameerkumar.website
   tags:
   - Phrases
   properties:
