@@ -1,4 +1,4 @@
-# Corporate Bullshit Generator API (corporate-bullshit-generator-api)
+# Corporate Bullshit Generator API
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,72 +66,130 @@
 
 The Corporate Bullshit Generator API is a free public REST API that returns randomly-generated corporate jargon phrases as JSON. Each request returns a single buzzword-laden phrase suitable for placeholder text, parody content, test fixtures, or comic relief in mock dashboards. The API is unauthenticated and returns a single phrase property in the JSON response body.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/corporate-bullshit-generator-api/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/corporate-bullshit-generator-api/refs/heads/main/apis.yml)
+**Areas:** Buzzwords · Comedy · Corporate Jargon · Fake Data · Free · Generator · JSON · Mock Data · Phrases · Public APIs · REST · Test Data
 
-## Scope
+## Corporate Bullshit Generator API on APIs.io
 
-- **Type:** Index
-- **Position:** Consuming
-- **Access:** 3rd-Party
+Everything profiled for Corporate Bullshit Generator API is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/corporate-bullshit-generator-api/](https://apis.io/providers/corporate-bullshit-generator-api/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (1)
 
-- Buzzwords
-- Comedy
-- Corporate Jargon
-- Fake Data
-- Free
-- Generator
-- JSON
-- Mock Data
-- Phrases
-- Public API
-- REST
-- Test Data
-- Unauthenticated
+- [Corporate Bullshit Generator API Phrases API](https://apis.io/apis/corporate-bullshit-generator-api/corporate-bullshit-generator-api-phrases-api/) — Random corporate jargon phrase generation.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2024-12-25
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Corporate Bullshit Generator API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-A single-endpoint public REST API that returns a randomly-generated corporate jargon phrase as JSON. Each call to the root path returns a new phrase in the form {"phrase": "..."}. No authentication, no rate limit headers, and no parameters are required.
+- [Corporate Bullshit Generator Api Agentic Access](https://apis.io/agentic-access/corporate-bullshit-generator-api/corporate-bullshit-generator-api-agentic-access/)
 
-- **Human URL:** [https://corporatebs-generator.sameerkumar.website/](https://corporatebs-generator.sameerkumar.website/)
-- **Base URL:** `https://corporatebs-generator.sameerkumar.website`
+#### JSON-LD (1)
 
-#### Tags
+Linked-data contexts for the provider's vocabulary.
 
-- Free
-- JSON
-- Public API
-- REST
-- Unauthenticated
+- [Corporate Bullshit Generator Context](https://apis.io/jsonld/corporate-bullshit-generator-api/corporate-bullshit-generator-context/)
 
-#### Properties
+#### Vocabulary (1)
 
-- [Human U R L](https://corporatebs-generator.sameerkumar.website/)
-- [Git Hub](https://github.com/sameerkumar18/corporate-bs-generator)
-- [OpenAPI](openapi/corporate-bullshit-generator-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/corporate-bullshit-generator-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/corporate-bullshit-generator-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Rules](rules/corporate-bullshit-generator-api-rules.yml)
-- [Capabilities](capabilities/corporate-bullshit-generator-api-capabilities.yml)
-- [JSON-LD](json-ld/corporate-bullshit-generator-context.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Vocabulary](vocabulary/corporate-bullshit-generator-vocabulary.yml)
+The provider's domain terms, defined.
 
-## Common Properties
+- [Corporate Bullshit Generator API Vocabulary](https://apis.io/vocabularies/corporate-bullshit-generator-api/corporate-bullshit-generator-vocabulary/)
+
+#### Collections (2)
+
+Postman and Open Collection request collections.
+
+- [Corporate Bullshit Generator API](https://apis.io/collections/corporate-bullshit-generator-api/open-corporate-bullshit-generator-api/)
+- [Corporate Bullshit Generator Phrases API](https://apis.io/collections/corporate-bullshit-generator-api/open-corporate-bullshit-generator-api-phrases-api/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Corporate Bullshit Generator API API Rules](https://apis.io/rules/corporate-bullshit-generator-api/corporate-bullshit-generator-api-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Corporate Bullshit Generator Api Domain Security](https://apis.io/security/corporate-bullshit-generator-api/corporate-bullshit-generator-api-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Corporate Bullshit Generator Api Plans Pricing](https://apis.io/plans/corporate-bullshit-generator-api/corporate-bullshit-generator-api-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Corporate Bullshit Generator Api Rate Limits](https://apis.io/rate-limits/corporate-bullshit-generator-api/corporate-bullshit-generator-api-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Corporate Bullshit Generator Api Finops](https://apis.io/finops/corporate-bullshit-generator-api/corporate-bullshit-generator-api-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://corporatebs-generator.sameerkumar.website/)
-- [Git Hub](https://github.com/sameerkumar18/corporate-bs-generator)
-- [Author](https://sameerkumar.website/)
-- [Public APIs Listing](https://github.com/public-apis/public-apis)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 23.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 53.6 |
+| Contract quality | 49.3 |
+| Contract governance | 25.0 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 7.9 |
+
+**Agent readiness 23.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | verified |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/corporate-bullshit-generator-api/](https://apis.io/providers/corporate-bullshit-generator-api/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Corporate Bullshit Generator API: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/corporate-bullshit-generator-api/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
